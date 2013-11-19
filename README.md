@@ -20,7 +20,7 @@ Alternatively, you can run:
 Then use a code sample below.
 
 Or, use Composer:
-  <code>
+  <pre><code>
     {
         "repositories": [
             {
@@ -32,7 +32,7 @@ Or, use Composer:
            "pilat/paymentwall-php": "dev-master"
         }
     }
-  </code>
+  </code></pre>
 
 #Code Samples
 
