@@ -1,0 +1,13 @@
+{
+    "name": "pilat/paymentwall-php",
+    "description": "Paymentwall PHP Library",
+    "homepage": "http://paymentwall.com",
+    "require": {
+        "php": ">=5.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "lib/"
+        }
+    }
+}

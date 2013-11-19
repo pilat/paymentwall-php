@@ -19,6 +19,21 @@ Alternatively, you can run:
 
 Then use a code sample below.
 
+Or, use Composer:
+  <code>
+    {
+        "repositories": [
+            {
+                "type": "git",
+                "url": "https://github.com/pilat/paymentwall-php"
+            }
+        ],
+        "require": {
+           "pilat/paymentwall-php": "dev-master"
+        }
+    }
+  </code>
+
 #Code Samples
 
 ##Digital Goods API
