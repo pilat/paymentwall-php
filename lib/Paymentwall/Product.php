@@ -51,12 +51,20 @@ class Paymentwall_Product
 	}
 
 	/**
-	 * @return float product price, e.g. 9.99
+	 * @return float product price
 	 */ 
 	public function getAmount()
 	{
 		return $this->amount;
 	}
+
+    /**
+     * @return string formatted amount, e.g. "9.99"
+     */
+    public function getFormattedAmount()
+    {
+        return number_format($this->amount, 2, '.', '');
+    }
 
 	/**
 	 * @return string ISO currency code, e.g. USD

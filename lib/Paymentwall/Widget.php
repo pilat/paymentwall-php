@@ -63,7 +63,7 @@ class Paymentwall_Widget extends Paymentwall_Base
 						$product = $product->getTrialProduct();
 					}
 
-					$params['amount'] = $product->getAmount();
+					$params['amount'] = $product->getFormattedAmount();
 					$params['currencyCode'] = $product->getCurrencyCode();
 					$params['ag_name'] = $product->getName();
 					$params['ag_external_id'] = $product->getId();
@@ -82,7 +82,7 @@ class Paymentwall_Widget extends Paymentwall_Base
 								$params['ag_post_trial_period_length'] = $postTrialProduct->getPeriodLength();
 								$params['ag_post_trial_period_type'] = $postTrialProduct->getPeriodType();
 								$params['ag_post_trial_name'] = $postTrialProduct->getName();
-								$params['post_trial_amount'] = $postTrialProduct->getAmount();
+								$params['post_trial_amount'] = $postTrialProduct->getFormattedAmount();
 								$params['post_trial_currencyCode'] = $postTrialProduct->getCurrencyCode();
 							}
 
@@ -102,7 +102,7 @@ class Paymentwall_Widget extends Paymentwall_Base
 				$params['external_ids[' . $index . ']'] = $product->getId();
 
 				if (isset($product->amount)) {
-					$params['prices[' . $index . ']'] = $product->getAmount();
+					$params['prices[' . $index . ']'] = $product->getFormattedAmount();
 				}
 				if (isset($product->currencyCode)) {
 					$params['currencies[' . $index . ']'] = $product->getCurrencyCode();
